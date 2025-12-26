@@ -1,7 +1,7 @@
 UPDATE testing.users
-SET email      = $1,
-    first_name = $2,
-    last_name  = $3,
-    username   = $4
-WHERE email = $1
+SET email      = $2,
+    first_name = $3,
+    last_name  = $4,
+    username   = $5
+WHERE username = $1
 RETURNING $table_fields;

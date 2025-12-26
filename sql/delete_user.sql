@@ -1,3 +1,3 @@
 DELETE FROM testing.users
-WHERE email = $1
+WHERE username = $1
 RETURNING $table_fields;
